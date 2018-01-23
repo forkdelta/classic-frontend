@@ -736,5 +736,5 @@
     { "addr": "0x4cc19356f2d37338b9802aa8e8fc58b0373296e7", "name": "SELFKEY", "decimals": 18 },
     { "addr": "0x9b7593aae6b48d02668808c2dfbfc4bef35ef957", "name": "DVN", "decimals": 18 }
   ],
-  "defaultPair": { "token": "PPT", "base": "ETH" }
+  "defaultPair": { "token": "DAI", "base": "ETH" }
 }
