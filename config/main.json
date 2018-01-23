@@ -12,7 +12,7 @@
   "ethTestnet": false,
   "ethChainId": 1,
   "ethProvider": "http://localhost:8545",
-  "ethGasPrice": 51000000000,
+  "ethGasPrice": 24000000000,
   "ethAddr": "0x0000000000000000000000000000000000000000",
   "ethAddrPrivateKey": "",
   "gasApprove": 250000,
@@ -685,7 +685,6 @@
     { "addr": "0x0af44e2784637218dd1d32a322d44e603a8f0c6a", "name": "MTX", "decimals": 18 },
     { "addr": "0x0f598112679b78e17a4a9febc83703710d33489c", "name": "XMRG", "decimals": 8 },
     { "addr": "0xfb7da9863e030495db8b4d067d665fc8433fff85", "name": "PCC", "decimals": 18 },
-    { "addr": "0x6cee948c9d593c58cba5dfa70482444899d1341c", "name": "SXSOLD", "decimals": 18 },
     { "addr": "0xa0e743c37c470ab381cf0e87b6e8f12ef19586fd", "name": "CRYPHER", "decimals": 18 },
     { "addr": "0xe8c09672cfb9cfce6e2edbb01057d9fa569f97c1", "name": "INDI", "decimals": 18 },
     { "addr": "0x21692a811335301907ecd6343743791802ba7cfd", "name": "ADU", "decimals": 18 },
@@ -704,8 +703,6 @@
     { "addr": "0xd6e49800decb64c0e195f791348c1e87a5864fd7", "name": "RCT", "decimals": 9 },
     { "addr": "0x52f7018bc6ba4d24abfbaefccae4617bfb0a0b52", "name": "YACHT", "decimals": 9 },
     { "addr": "0x672a1ad4f667fb18a333af13667aa0af1f5b5bdd", "name": "CRED", "decimals": 18 },
-    { "addr": "0xaadb05f449072d275833baf7c82e8fca4ee46575", "name": "SXUOLD", "decimals": 6 },
-    { "addr": "0x554c98b3ec772f79ee5b96d47a1d10852ed274c8", "name": "SXDOLD", "decimals": 6 },
     { "addr": "0x2eb86e8fc520e0f6bb5d9af08f924fe70558ab89", "name": "LGR", "decimals": 8 },
     { "addr": "0x6beb418fc6e1958204ac8baddcf109b8e9694966", "name": "LNC", "decimals": 18 },
     { "addr": "0xaf146fbd319ca7ae178caa2c9d80a2db6b944350", "name": "PXT", "decimals": 18 },
@@ -734,7 +731,12 @@
     { "addr": "0x9720b467a710382a232a32f540bdced7d662a10b", "name": "VZT", "decimals": 18 },
     { "addr": "0x85e076361cc813a908ff672f9bad1541474402b2", "name": "TEL", "decimals": 2 },
     { "addr": "0x4cc19356f2d37338b9802aa8e8fc58b0373296e7", "name": "SELFKEY", "decimals": 18 },
-    { "addr": "0x9b7593aae6b48d02668808c2dfbfc4bef35ef957", "name": "DVN", "decimals": 18 }
+    { "addr": "0x9b7593aae6b48d02668808c2dfbfc4bef35ef957", "name": "DVN", "decimals": 18 },
+    { "addr": "0xa5F8fC0921880Cb7342368BD128eb8050442B1a1", "name": "ARY", "decimals": 18 },
+    { "addr": "0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f", "name": "HKN", "decimals": 8 },
+    { "addr": "0xcc13fc627effd6e35d2d2706ea3c4d7396c610ea", "name": "IDXM", "decimals": 8 },
+    { "addr": "0xcdcfc0f66c522fd086a1b725ea3c0eeb9f9e8814", "name": "AURA", "decimals": 18 },
+    { "addr": "0xdA6cb58A0D0C01610a29c5A65c303e13e885887C", "name": "cV", "decimals": 18 }
   ],
   "defaultPair": { "token": "DAI", "base": "ETH" }
 }
