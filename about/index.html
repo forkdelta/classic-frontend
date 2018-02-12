@@ -1,5 +1,14 @@
 <html>
 	<head>
+		
+		<title>About ForkDelta | Roadmaps, FAQs, and more!</title>
+		<meta name="description" content="Learn about ForkDelta today! ForkDelta is a fully decentralized Ethereum Token Exchange with the most ERC20 listings of any exchange." />
+		
+		<meta property="og:url" content="https://forkdelta.github.io" />
+	    <meta property="og:title" content="About ForkDelta | Roadmaps, FAQs, and more!" />
+	    <meta property="og:description" content="Learn about ForkDelta today! ForkDelta is a fully decentralized Ethereum Token Exchange with the most ERC20 listings of any exchange." />
+	    <meta property="og:image" content="https://forkdelta.github.io/images/logo.png" />
+		
 		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<script src="http://code.jquery.com/jquery-3.3.1.min.js"
 				integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -26,7 +35,7 @@
 				});
 
 				// Add smooth scrolling to nav links
-				$(".header a").on('click', function(event) {
+				$("a.hash").on('click', function(event) {
 					event.preventDefault();
 
 					scroll_to_hash(this.hash);
@@ -235,9 +244,9 @@
 
 		<div class="header">
 			<a href="https://forkdelta.github.io">Trade</a>
-			<a href="#roadmap">Roadmap</a>
-			<a href="#donate">Donate</a>
-			<a href="#faqs">FAQs</a>
+			<a class="hash" href="#roadmap">Roadmap</a>
+			<a class="hash" href="#donate">Donate</a>
+			<a class="hash" href="#faqs">FAQs</a>
 		</div>
 
 		<a name="#roadmap"></a>
