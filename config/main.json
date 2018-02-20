@@ -660,6 +660,7 @@
     { "addr": "0xcc4ef9eeaf656ac1a2ab886743e98e97e090ed38", "name": "DDF", "decimals": 18 },
     { "addr": "0xcdcfc0f66c522fd086a1b725ea3c0eeb9f9e8814", "name": "AURA", "decimals": 18 },
     { "addr": "0xce3d9c3f3d302436d12f18eca97a3b00e97be7cd", "name": "EPOSY", "decimals": 18 },
+    { "addr": "0xce53a179047ebed80261689367c093c90a94cc08", "name": "EDT", "decimals": 8 },    
     { "addr": "0xce59d29b09aae565feeef8e52f47c3cd5368c663", "name": "BULX", "decimals": 18 },
     { "addr": "0xce5c603c78d047ef43032e96b5b785324f753a4f", "name": "E4ROW", "decimals": 2 },
     { "addr": "0xce61f5e6d1fe5a86e246f68aff956f7757282ef0", "name": "1LIFE", "decimals": 18 },
@@ -813,8 +814,7 @@
     { "addr": "0xfeed1a53bd53ffe453d265fc6e70dd85f8e993b6", "name": "H2O", "decimals": 18 },
     { "addr": "0xff18dbc487b4c2e3222d115952babfda8ba52f5f", "name": "LIFE", "decimals": 18 },
     { "addr": "0xff3519eeeea3e76f1f699ccce5e23ee0bdda41ac", "name": "BCAP", "decimals": 0 },
-    { "addr": "0xffe8196bc259e8dedc544d935786aa4709ec3e64", "name": "HDG", "decimals": 18 },
-    { "addr": "0xce53a179047ebed80261689367c093c90a94cc08", "name": "EDT", "decimals": 8 }
+    { "addr": "0xffe8196bc259e8dedc544d935786aa4709ec3e64", "name": "HDG", "decimals": 18 }
   ],
   "defaultPair": { "token": "DAI", "base": "ETH" }
 }
