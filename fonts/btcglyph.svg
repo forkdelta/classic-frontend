@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20161013 at Fri Jan  1 02:30:17 1904
+ By ,,,
+Digitized data copyright (c) 2010-2011, Google Corporation.
+</metadata>
+<defs>
+<font id="btcglyphRegular" horiz-adv-x="472" >
+  <font-face 
+    font-family="btcglyph"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="2048"
+    panose-1="0 0 0 0 0 0 0 0 0 0"
+    ascent="1638"
+    descent="-410"
+    bbox="0 0 886 1557"
+    underline-thickness="50"
+    underline-position="-200"
+    unicode-range="U+0020-20BF"
+  />
+<missing-glyph 
+d="M0 700v-700h432v700h-432zM50 50v600h332v-600h-332z" />
+    <glyph glyph-name=".notdef" 
+d="M0 700v-700h432v700h-432zM50 50v600h332v-600h-332z" />
+    <glyph glyph-name=".notdef" 
+d="M0 700v-700h432v700h-432zM50 50v600h332v-600h-332z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="682" 
+ />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="40" 
+ />
+    <glyph glyph-name="[namenotfound]" unicode="&#x20bf;" horiz-adv-x="1017" 
+d="M71 1349v-1176h410q190 0 299 89q106 87 106 246q0 236 -268 281v8q112 21 171 89q58 69 58 172q0 152 -105 221q-104 70 -339 70h-332zM208 848v386h201q154 0 225 -44t71 -143q0 -108 -64 -153q-64 -46 -208 -46h-225zM208 730h234q151 0 224 -52q74 -51 74 -161
+q0 -117 -72 -172q-71 -55 -215 -55h-245v440zM-600 1537zM159 1552v-231h153v231h-153zM410 1557v-231h153v231h-153zM161 238v-231h153v231h-153zM412 238v-231h153v231h-153z" />
+  </font>
+</defs></svg>
