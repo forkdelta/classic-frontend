@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@font-face {
+    font-family: 'opensans';
+    font-style: normal;
+    font-weight: normal;
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/opensans-regular-webfont.eot');
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('chrome-extension://__MSG_@@extension_id__/fonts/opensans-regular-webfont.woff2') format('woff2'), url('chrome-extension://__MSG_@@extension_id__/fonts/opensans-regular-webfont.woff') format('woff'), url('chrome-extension://__MSG_@@extension_id__/fonts/opensans-regular-webfont.ttf') format('truetype'), url('chrome-extension://__MSG_@@extension_id__/fonts/assets/opensans-regular-webfont.svg#opensansregular') format('svg')
+}
+
+@font-face {
+    font-family: 'opensans';
+    font-style: bold;
+    font-weight: bold;
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/opensans-bold-webfont.eot');
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'), url('chrome-extension://__MSG_@@extension_id__/fonts/opensans-bold-webfont.woff2') format('woff2'), url('chrome-extension://__MSG_@@extension_id__/fonts/opensans-bold-webfont.woff') format('woff'), url('chrome-extension://__MSG_@@extension_id__/fonts/opensans-bold-webfont.ttf') format('truetype'), url('chrome-extension://__MSG_@@extension_id__/fonts/assets/opensans-bold-webfont.svg#opensansbold') format('svg')
+}
+
+@font-face {
+    font-family: 'btcglyph';
+    font-style: normal;
+    font-weight: normal;
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/btcglyph.eot');
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/btcglyph.eot?#iefix') format('embedded-opentype'), url('chrome-extension://__MSG_@@extension_id__/fonts/btcglyph.woff2') format('woff1'), url('chrome-extension://__MSG_@@extension_id__/fonts/btcglyph.woff') format('woff'), url('chrome-extension://__MSG_@@extension_id__/fonts/btcglyph.ttf') format('truetype'), url('chrome-extension://__MSG_@@extension_id__/fonts/btcglyph.svg#MyFontRegular') format('svg')
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+:root:root:root:root button:focus {
+  outline: 0;
+}
+
+:root:root:root:root  body {
+  position: relative;
+  margin: 0;
+  font-size: 11px;
+  color: #ced2d5;
+  background: #1E2B34;
+  /* background: #15232c; */
+  font-family: 'opensans', 'Open Sans', 'btcglyph', sans-serif;
+}
+
+:root:root:root:root body::-webkit-scrollbar,
+.scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+:root:root:root:root body::-webkit-scrollbar-track,
+:root:root:root:root .scroll::-webkit-scrollbar-track {
+  background: #15232c;
+}
+
+:root:root:root:root body::-webkit-scrollbar-thumb,
+:root:root:root:root .scroll::-webkit-scrollbar-thumb {
+  background-color: #233540;
+  border: 1px solid #233540;
+  transition: all 0.2s ease-out;
+}
+
+:root:root:root:root body::-webkit-scrollbar-thumb:hover,
+:root:root:root:root .scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #445661;
+}
+
+/* theme toggle buttons hide */
+:root:root:root:root #bs-example-navbar-collapse-1 ul:first-child li:first-child a,
+:root:root:root:root #bs-example-navbar-collapse-1 ul:first-child li:nth-child(2) a {
+  display: none;
+}
+
+/* chat button */
+:root:root:root:root #bs-example-navbar-collapse-1 ul:nth-child(2) li:first-child {
+  background: none;
+}
+
+:root:root:root:root #bs-example-navbar-collapse-1 ul:nth-child(2) li:first-child a {
+  background: none;
+}
+
+:root:root:root:root .row .no-float:not(:last-child) {
+  border-right: 2px solid #18252E;
+}
+
+:root:root:root:root .row-header {
+  background: #2f3d45;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 2px solid #18252E;
+}
+
+:root:root:root:root #bs-example-navbar-collapse-1 .navbar-nav a {
+  font-weight: bold;
+  color: #15232c !important;
+  font-size: 10px;
+}
+
+:root:root:root:root .dropdown-menu::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+:root:root:root:root .dropdown-menu::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+:root:root:root:root .dropdown-menu::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  transition: all 0.2s ease-out;
+}
+
+:root:root:root:root .dropdown-menu::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+/* selected item */
+:root:root:root:root #connection ul li[style="background: #999;"] {
+  background-color: none;
+}
+
+:root:root:root:root #connection ul li[style="background: #999;"] a {
+  color: #fff !important;
+  background: #2f3d45 !important;
+}
+
+:root:root:root:root .navbar-nav>li>.dropdown-menu a {
+  padding: 10px;
+}
+
+:root:root:root:root .nav-tabs.columns > li > a {
+  transition: background-color .25s ease-in-out;
+}
+
+:root:root:root:root .nav-tabs.columns > li > a,
+:root:root:root:root .nav-tabs.columns > li > a:hover {
+  background: #2f3d45;
+  color: #fff;
+}
+
+:root:root:root:root .nav-tabs.columns > li > a:hover {
+  background: #33424a;
+}
+
+:root:root:root:root .nav-tabs.columns > li.active > a,
+:root:root:root:root .nav-tabs.columns > li.active > a:hover {
+  background: #15232c;
+  color: #fff;
+}
+
+:root:root:root:root .badge {
+  background-color: #2f3d45;
+}
+
+:root:root:root:root .buy {
+  color: #84F766;
+}
+
+:root:root:root:root .sell {
+  color: #FF6939;
+}
+
+:root:root:root:root .label-success {
+  background-color: #4da53c;
+}
+
+:root:root:root:root .form-control,
+:root:root:root:root .form-control[disabled] {
+  width: 100%;
+  height: 36px;
+  padding: 8px 5px 8px 10px;
+  border: 1px solid #565f66;
+  border-radius: 2px;
+  outline: 0;
+  box-shadow: none;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: left;
+  color: #fff;
+  background-color: #404a52;
+  font-family: 'opensans', 'Open Sans', 'btcglyph', sans-serif;
+}
+
+:root:root:root:root .form-control[disabled] {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+:root:root:root:root .form-horizontal .control-label {
+  font-size: 10px;
+  font-weight: bold;
+  color: hsla(0,0%,100%,.8);
+}
+
+:root:root:root:root #transferFormToken td,
+:root:root:root:root #transferFormBase td {
+  position: relative;
+}
+
+:root:root:root:root #transferFormToken td .btn,
+:root:root:root:root #transferFormBase td .btn {
+  width: 100% !important;
+}
+
+:root:root:root:root #transferFormToken .fa-info-circle,
+:root:root:root:root #transferFormBase .fa-info-circle {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+}
+
+:root:root:root:root .btn,
+:root:root:root:root .btn-primary {
+  flex: 1;
+  border: none;
+  border-radius: 1px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  user-select: none;
+  background-color: #3d84d6 !important;
+  transition: background-color .2s ease-in-out;
+}
+
+:root:root:root:root .btn:hover,
+:root:root:root:root .btn-primary:hover {
+  background-color: #3a7bc7 !important;
+}
+
+:root:root:root:root .btn-success {
+  flex: 1;
+  border: none;
+  border-radius: 1px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  user-select: none;
+  background-color: #4da53c !important;
+  transition: background-color .2s ease-in-out;
+}
+
+:root:root:root:root .btn-success:hover {
+  background-color: #449235 !important;
+}
+
+:root:root:root:root .btn-danger {
+  flex: 1;
+  border: none;
+  border-radius: 1px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  user-select: none;
+  background-color: #ff6939 !important;
+  transition: background-color .2s ease-in-out;
+}
+
+:root:root:root:root .btn-danger:hover {
+  flex: 1;
+  border-radius: 1px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  user-select: none;
+  background-color: #ff5620 !important;
+  transition: background-color .2s ease-in-out;
+}
+
+:root:root:root:root #chartPrice {
+  background: #1E2B34 !important;
+}
+
+:root:root:root:root #chartPrice [fill="#cccccc"] {
+  fill: #4da53c;
+}
+
+:root:root:root:root #chartPrice [fill="#ff0000"] {
+  fill: #ff6939;
+}
+
+:root:root:root:root #chartDepth {
+  background: #1E2B34 !important;
+}
+
+:root:root:root:root #chartDepth [fill="#cccccc"] {
+  fill: #4da53c;
+}
+
+:root:root:root:root #chartDepth [fill="#ff0000"] {
+  fill: #ff6939;
+}
+
+:root:root:root:root #myTrades tbody tr:nth-child(even),
+:root:root:root:root #myFunds tbody tr:nth-child(even) {
+  background: #1B2831;
+}
+
+:root:root:root:root .table-header {
+  border-bottom: 2px solid #18252E;
+}
+
+:root:root:root:root tr.clickable-row:hover {
+  background: #1B2831;
+}
+
+:root:root:root:root #volume tr:hover,
+:root:root:root:root #trades tr:hover {
+  background-color: #1B2831;
+}
+
+/* use circle-o-notch icon for spinner */
+:root:root:root:root .fa.fa-spinner:before {
+  content: "\f1ce";
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+:root:root:root:root .alertify .ajs-dialog,
+:root:root:root:root .alertify .ajs-body .ajs-content,
+:root:root:root:root .modal-body,
+:root:root:root:root .modal-content {
+  color: #ced2d5;
+  background: #1E2B34;
+}
+
+:root:root:root:root .alertify .ajs-body .ajs-content a,
+:root:root:root:root .modal-body a,
+:root:root:root:root .modal-content a {
+  color: #337ab7;
+}
+
+:root:root:root:root .alertify .ajs-body .ajs-content a:hover,
+:root:root:root:root .modal-body a:hover,
+:root:root:root:root .modal-content a:hover {
+  color: #408cce;
+}
+
+:root:root:root:root .alertify .ajs-header,
+:root:root:root:root .modal-header {
+  color: #ced2d5;
+  background: #1E2B34;
+  border-bottom: 2px solid #18252E;
+}
+
+:root:root:root:root .alertify .ajs-header .fa,
+:root:root:root:root .modal-header .fa {
+  color: #fff !important;
+}
+
+:root:root:root:root .alertify .ajs-footer,
+:root:root:root:root .modal-footer {
+  color: #ced2d5;
+  background: #1E2B34;
+  border-top: 2px solid #18252E;
+}
+
+:root:root:root:root .alertify .ajs-footer .ajs-buttons.ajs-auxiliary .ajs-button,
+:root:root:root:root .alertify .ajs-footer .ajs-buttons.ajs-primary .ajs-button {
+  flex: 1;
+  border: none;
+  border-radius: 1px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  user-select: none;
+  background-color: #3d84d6 !important;
+  transition: background-color .2s ease-in-out;
+}
+
+:root:root:root:root .alertify .ajs-commands button.ajs-close {
+
+}
+
+:root:root:root:root .modal .close {
+  color: #fff;
+  transition: color .2s ease-in-out;
+}
+
+:root:root:root:root .modal .close:hover {
+  color: #fff;
+}
+
+/* Cloudflare */
+
+:root:root:root:root #cf-content,
+:root:root:root:root #cf-content h1,
+:root:root:root:root #cf-content p {
+  color: #ced2d5;
+}
+
+:root:root:root:root #cf-content .bubbles {
+  background-color: #ced2d5;
+}
+
+:root:root:root:root #cf-content a,
+:root:root:root:root #cf-content a:hover,
+:root:root:root:root .attribution a,
+:root:root:root:root .attribution a:hover {
+  color: #337ab7;
+}
