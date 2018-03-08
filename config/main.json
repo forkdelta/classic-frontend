@@ -580,6 +580,7 @@
     { "addr": "0x999967e2ec8a74b7c8e9db19e039d920b31d39d0", "name": "TIE", "decimals": 18 },
     { "addr": "0x99ea4db9ee77acd40b119bd1dc4e33e1c070b80d", "name": "QSP", "decimals": 18 },
     { "addr": "0x9a005c9a89bd72a4bd27721e7a09a3c11d2b03c4", "name": "STAC", "decimals": 18 },
+    { "addr": "0x9a0242b7a33dacbe40edb927834f96eb39f8fbcb", "name": "BAX", "decimals": 18 },
     { "addr": "0x9adaba9ffda15e3a043c907d390f645147eb532a", "name": "CODECOIN", "decimals": 18 },
     { "addr": "0x9af2c6b1a28d3d6bc084bd267f70e90d49741d5b", "name": "AXP", "decimals": 8 },
     { "addr": "0x9af4f26941677c706cfecf6d3379ff01bb85d5ab", "name": "DRT", "decimals": 8 },
