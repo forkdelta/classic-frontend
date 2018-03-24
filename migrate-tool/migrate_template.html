@@ -1,0 +1,84 @@
+<!-- Migration Tool HTML -->
+<div class="migration-overlay" id="migration-modal">
+    <div class="modal-dialog" tabindex="-1">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h2>Migration Tool</h2>
+                <p>From The EtherDelta's Smart Contract to the Improved ForkDelta Smart Contract </p>
+                <p class="text-center" id="migration-current-user"></p>
+            </div>
+            <div class="modal-body">
+                <div class="container migration-container">
+                    <div class="row">
+                        <h3 class="text-center">EtherDelta Balances</h3>
+                        <div class="col-sm-5">
+                            <label for="ED-migration-balances">Currently on ED Contract</label>
+                            <select name="ED-bal-from[]" id="ED-migration-balances" class="form-control migrate-ms"
+                                    size="8" multiple="multiple"></select>
+                        </div>
+                        <div class="col-sm-2 ms-buttons">
+                            <button type="button" id="ED-migration-balances_rightAll" class="btn btn-block"><i
+                                    class="fa fa-angle-double-right"></i></button>
+                            <button type="button" id="ED-migration-balances_rightSelected" class="btn btn-block"><i
+                                    class="fa fa-angle-right"></i></button>
+                            <button type="button" id="ED-migration-balances_leftSelected" class="btn btn-block"><i
+                                    class="fa fa-angle-left"></i></button>
+                            <button type="button" id="ED-migration-balances_leftAll" class="btn btn-block"><i
+                                    class="fa fa-angle-double-left"></i></button>
+                        </div>
+                        <div class="col-sm-5">
+                            <label for="ED-migration-balances_to">Pending Transfer To FD Contract</label>
+                            <select name="ED-bal-to[]" id="ED-migration-balances_to" class="form-control migrate-ms"
+                                    size="8" multiple="multiple"></select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h3>Missing A Balance?</h3>
+                            <p> Add a token by its address.</p>
+                            <form id="token-addr-form">
+                                <div class="form-group">
+                                    <label for="new-token-addr-input">Token Address</label>
+                                    <input required size="42" pattern="^0x.{40}$" class="form-control"
+                                           id="new-token-addr-input"
+                                           placeholder="0x0000000000000000000000000000000000000000">
+                                </div>
+                                <button type="submit" class="btn btn-default">Add token</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3 class="text-center">EtherDelta Orders</h3>
+                        <div class="col-sm-5">
+                            <label for="ED-migration-balances">Currently on ED Contract</label>
+                            <!-- TODO: Style multiselects -->
+                            <select name="ED-bal-from[]" id="ED-migration-orders" class="form-control migrate-ms"
+                                    size="8" multiple="multiple"></select>
+                        </div>
+                        <div class="col-sm-2 ms-buttons">
+                            <button type="button" id="ED-migration-orders_rightAll" class="btn btn-block"><i
+                                    class="fa fa-angle-double-right"></i></button>
+                            <button type="button" id="ED-migration-orders_rightSelected" class="btn btn-block"><i
+                                    class="fa fa-angle-right"></i></button>
+                            <button type="button" id="ED-migration-orders_leftSelected" class="btn btn-block"><i
+                                    class="fa fa-angle-left"></i></button>
+                            <button type="button" id="ED-migration-orders_leftAll" class="btn btn-block"><i
+                                    class="fa fa-angle-double-left"></i></button>
+                        </div>
+                        <div class="col-sm-5">
+                            <label for="ED-migration-balances_to">Pending Transfer To FD Contract</label>
+                            <select name="ED-bal-to[]" id="ED-migration-orders_to" class="form-control migrate-ms"
+                                    size="8" multiple="multiple"></select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="migrate-tool-footer text-center">
+                <button class="btn btn-default" id="begin-migration">
+                    Begin Migration
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
