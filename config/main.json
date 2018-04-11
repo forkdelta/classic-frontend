@@ -984,6 +984,7 @@
     { "addr": "0xff603f43946a3a28df5e6a73172555d8c8b02386", "name": "RNT", "decimals": 18 },
     { "addr": "0xffc63b9146967a1ba33066fb057ee3722221acf0", "name": "A", "decimals": 18 },
     { "addr": "0xffe8196bc259e8dedc544d935786aa4709ec3e64", "name": "HDG", "decimals": 18 }
+    { "addr": "0xd8e64769bb02136564737a4ecc712083b473db86", "name": "WEA", "decimals": 2 }
   ],
   "defaultPair": { "token": "DAI", "base": "ETH" }
 }
