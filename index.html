@@ -12,7 +12,7 @@
     <link href="/css/alertify-bootstrap.min.css" rel="stylesheet" />
     <link href="/css/black.css" rel="stylesheet" id="stylesheet" />
     <link href="/css/small.css" rel="stylesheet" media="only screen and (max-device-width: 480px)" />
-
+    <link href="/highstocks/chart.css" rel="stylesheet" id="stylesheet" />
     <meta property="og:url" content="https://bluedex.github.io" />
     <meta property="og:title" content="BlueDEX | Decentralized Ethereum Token Exchange" />
     <meta property="og:description" content="BlueDEX is a decentralized Ethereum Token Exchange with the most ERC20 listings of any exchange. Start trading cryptocurrency today." />
@@ -94,12 +94,199 @@
             <div class="row-header trn">price_chart</div>
             <div class="row-box nav-header">
               <ul class="nav nav-tabs two columns" role="tablist">
-                <li role="presentation" class="active"><a href="#chartPrice" aria-controls="chartPrice" role="tab" data-toggle="tab" class="trn">price</a></li>
+		<li role="presentation" class="active"><a href="#chartPriceNew" aria-controls="chartPriceNew" role="tab" data-toggle="tab" class="trn">Chart</a></li>
+                <li role="presentation"><a href="#chartPrice" aria-controls="chartPrice" role="tab" data-toggle="tab" class="trn">price</a></li>
                 <li role="presentation"><a href="#chartDepth" aria-controls="chartDepth" role="tab" data-toggle="tab" class="trn">depth</a></li>
               </ul>
             </div>
             <div class="row-box height2">
               <div class="tab-content" style="height: 100%;">
+		 <div role="tabpanel" class="tab-pane active" id="chartPriceNew" style="height: 100%; width: 100%; background: #000;">
+		   <div id="demo">
+		      <div id="menu-side">
+			 <button id="annotation-selection" data-description="Select an annotation. Click on the annotation and it will be outlined."></button>
+			 <button id="annotation-line" data-description="Draw a line. Click for the start point, click again for the end point."></button>
+			 <!-- <button id="annotation-rect" data-description="Add a rectangle. It sticks to the series when candle is clicked. It is not related to any point on a chart otherwise and it won't scale while scaling the chart."></button>
+			    <button id="annotation-circle" data-description="Add a circle. It sticks to the series when candle is clicked. It is not related to any point on a chart otherwise and it won't scale while scaling the chart."></button> -->
+			 <button id="annotation-arrow" data-description="Draw an arrow. Click for the start point, click again for the end point."></button>
+			 <button id="annotation-tunnel" data-description="Draw a tunnel. Click on two candles to show a tunnel between them."></button>
+			 <button id="annotation-text" data-description="Add a text annotation. Click on any point in the plot area to place a text there."></button>
+			 <button id="annotation-fibonacci" data-description="Draw Fibonacci retracements. Click on two points to show retracement lines between them."></button>
+			 <button id="annotation-flag" data-description="Add various flags to the chart. Click on any point on a series to add a flag."></button>
+			 <!-- <button id="annotation-feature" data-description="Example of adding any type of object to the chart."></button> -->
+			 <div id="submenu">
+			    <div class="left">
+			       <div class="empty">
+			       </div>
+			       <div class="main">
+			       </div>
+			    </div>
+			    <div>
+			       <div class="inner">
+				  <ul>
+				     <li id="flag-circlepin"></li>
+				     <li id="flag-diamondpin"></li>
+				     <li id="flag-squarepin"></li>
+				     <li id="flag-flag"></li>
+				  </ul>
+			       </div>
+			    </div>
+			 </div>
+		      </div>
+		      <div id="menu-nav">
+			 <div id="indicators-container">
+			    <div class="button-group">
+			       <button id="indicators-dropdown" class="menu-btn select-dropdown" style="width:auto">
+			       Indicators
+			       </button>
+			       <ul class="dropdown-menu">
+				  <li>
+				     <a href="#" class="small" data-axis="true" data-value="atr" tabIndex="-1">
+				     <span> ATR </span><input type="checkbox"/>
+				     </a>
+				  </li>
+				  <li>
+				     <a href="#" class="small" data-value="bb" tabIndex="-1">
+				     <span> Bollinger bands </span><input type="checkbox"/>
+				     </a>
+				  </li>
+				  <li>
+				     <a href="#" class="small" data-axis="true" data-value="cci" tabIndex="-1">
+				     <span> CCI </span><input type="checkbox"/>
+				     </a>
+				  </li>
+				  <li>
+				     <a href="#" class="small" data-value="ema" tabIndex="-1">
+				     <span> EMA </span><input type="checkbox"/>
+				     </a>
+				  </li>
+				  <li>
+				     <a href="#" class="small" data-value="ikh" tabIndex="-1">
+				     <span> Ichimoku Kinko Hyo </span><input type="checkbox"/>
+				     </a>
+				  </li>
+				  <li>
+				     <a href="#" class="small" data-axis="true" data-value="macd" tabIndex="-1">
+				     <span> MACD </span><input type="checkbox"/>
+				     </a>
+				  </li>
+				  <li>
+				     <a href="#" class="small" data-value="pivotpoints" tabIndex="-1">
+				     <span> Pivot Points </span><input type="checkbox"/>
+				     </a>
+				  </li>
+				  <li>
+				     <a href="#" class="small" data-value="priceenvelopes" tabIndex="-1">
+				     <span> Price Envelopes </span><input type="checkbox"/>
+				     </a>
+				  </li>
+				  <li>
+				     <a href="#" class="small" data-axis="true" data-value="roc" tabIndex="-1">
+				     <span> ROC </span><input type="checkbox"/>
+				     </a>
+				  </li>
+				  <li>
+				     <a href="#" class="small" data-axis="true" data-value="rsi" tabIndex="-1">
+				     <span> RSI </span><input type="checkbox" selected="true"/>
+				     </a>
+				  </li>
+				  <li>
+				     <a href="#" class="small" data-value="sma" tabIndex="-1">
+				     <span> SMA </span><input type="checkbox"/>
+				     </a>
+				  </li>
+				  <li>
+				     <a href="#" class="small" data-axis="true" data-value="stochastic" tabIndex="-1">
+				     <span> Stochastic </span><input type="checkbox"/>
+				     </a>
+				  </li>
+				  <li>
+				     <a href="#" class="small" data-value="wma" tabIndex="-1">
+				     <span> WMA </span><input type="checkbox"/>
+				     </a>
+				  </li>
+				  <li>
+				     <a href="#" class="small" data-value="zigzag" tabIndex="-1">
+				     <span> Zig Zag </span><input type="checkbox"/>
+				     </a>
+				  </li>
+			       </ul>
+			    </div>
+			 </div>
+		      </div>
+		      <div id="highcharts-manage-chart">
+			 <button id="highcharts-save" data-tt-below="true" data-description="Saves your chart in your browser's memory. If you come back later, the chart will be still here."></button>
+			 <button id="highcharts-reset" data-tt-below="true" data-description="Removes all annotations and indicators from the chart."></button>
+		      </div>
+		      <div id="container-inner"></div>
+		      <div id='annotation-text-form'>
+			 <form id="add-text-annotation">
+			    <fieldset>
+			       <legend>Text</legend>
+			       <input type='text' id='text' style='width: 130px' />
+			    </fieldset>
+			    <fieldset>
+			       <legend>Background color</legend>
+			       <div>
+				  <label>
+				  <input type='radio' value='rgba(0, 0, 0, 0.75)' name='background-color' checked>
+				  Black
+				  </label>
+			       </div>
+			       <div>
+				  <label>
+				  <input type='radio' value='rgba(255, 0, 0, 0.75)' name='background-color'>
+				  Red
+				  </label>
+			       </div>
+			       <div>
+				  <label>
+				  <input type='radio' value='rgba(0, 0, 255, 0.75)' name='background-color'>
+				  Blue
+				  </label>
+			       </div>
+			    </fieldset>
+			    <fieldset>
+			       <legend>Shape</legend>
+			       <div>
+				  <label>
+				  <input type='radio' name='shape' value='callout' checked>
+				  Callout
+				  </label>
+			       </div>
+			       <div>
+				  <label>
+				  <input type='radio' name='shape' value='connector'>
+				  Connector
+				  </label>
+			       </div>
+			       <div>
+				  <label>
+				  <input type='radio' name='shape' value='circle'>
+				  Circle
+				  </label>
+			       </div>
+			    </fieldset>
+			    <input type='hidden' id='x' />
+			    <input type='hidden' id='y' />
+			    <input type='submit' style='position:absolute; top:-1000px;' />
+			 </form>
+		      </div>
+		      <div id='annotation-flag-form'>
+			 <form id="add-flag-annotation">
+			    <fieldset>
+			       <legend>Title</legend>
+			       <input type='text' id='flag-title' style='width: 50px' maxlength='3' />
+			    </fieldset>
+			    <fieldset>
+			       <legend>Tooltip text</legend>
+			       <input type='text' id='flag-text' style='width: 150px' />
+			    </fieldset>
+			    <input type='submit' style='position:absolute; top:-1000px;' />
+			 </form>
+		      </div>
+		   </div>
+		</div>
                 <div role="tabpanel" class="tab-pane active" id="chartPrice" style="height: 100%; width: 100%; background: #000;"></div>
                 <div role="tabpanel" class="tab-pane" id="chartDepth" style="height: 100%; width: 100%; background: #000;"></div>
               </div>
@@ -191,6 +378,30 @@
     <script src="/js/chrome-u2f-api.js" type="text/javascript"></script>
     <script src="/js/ledger.min.js" type="text/javascript"></script>
     <script src="/js/main.js" type="text/javascript"></script>
+    <script src="/highstocks/highstock.js"></script>
+    <script src="/highstocks/modules/annotations.js"></script>
+    <script src="/highstocks/modules/drag-panes.js"></script>
+    <script src="/highstocks/modules/data.js"></script>
+    <script src="/highstocks/indicators/indicators.js"></script>
+    <script src="/highstocks/indicators/accumulation-distribution.js"></script>
+    <script src="/highstocks/indicators/atr.js"></script>
+    <script src="/highstocks/indicators/bollinger-bands.js"></script>
+    <script src="/highstocks/indicators/cci.js"></script>
+    <script src="/highstocks/indicators/cmf.js"></script>
+    <script src="/highstocks/indicators/ema.js"></script>
+    <script src="/highstocks/indicators/ichimoku-kinko-hyo.js"></script>
+    <script src="/highstocks/indicators/macd.js"></script>
+    <script src="/highstocks/indicators/mfi.js"></script>
+    <script src="/highstocks/indicators/momentum.js"></script>
+    <script src="/highstocks/indicators/pivot-points.js"></script>
+    <script src="/highstocks/indicators/price-envelopes.js"></script>
+    <script src="/highstocks/indicators/roc.js"></script>
+    <script src="/highstocks/indicators/rsi.js"></script>
+    <script src="/highstocks/indicators/stochastic.js"></script>
+    <script src="/highstocks/indicators/volume-by-price.js"></script>
+    <script src="/highstocks/indicators/wma.js"></script>
+    <script src="/highstocks/indicators/vwap.js"></script>
+    <script src="/highstocks/indicators/zigzag.js"></script>
     <script src="/js/ui.js" type="text/javascript"></script>
     
     <script>
