@@ -226,9 +226,9 @@
 
 #demo #annotation-text-form, #demo #annotation-flag-form {
     color: #707070;
-    /*display: none;*/
+    display: none;
     background-color:#fff;
-    /*position: absolute;*/
+    position: absolute;
     width:188px;
     z-index: 1000;
     padding:10px;
