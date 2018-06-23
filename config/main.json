@@ -31,6 +31,7 @@
     { "addr": "0x0000000000000000000000000000000000000000", "name": "ETH", "fullName": "Ethereum", "decimals": 18 }
   ],
   "tokens": [
+    { "addr": "0xb67734521eAbBE9C773729dB73E16CC2dfb20A58", "name": "e₹", "fullName": "eRupee", "decimals": 2 },
     { "addr": "0x006bea43baa3f7a6f765f14f10a1a1b08334ef45", "name": "STX", "fullName": "Stox", "decimals": 18 },
     { "addr": "0x009e864923b49263c7f10d19b7f8ab7a9a5aad33", "name": "FKX", "fullName": "Knoxstertoken", "decimals": 18 },
     { "addr": "0x00a0cbe98e4d110b0fa82646152d77babf2951d0", "name": "EETHER", "fullName": "EETHER", "decimals": 18 },
