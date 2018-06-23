@@ -1012,5 +1012,5 @@
     { "addr": "0xffc63b9146967a1ba33066fb057ee3722221acf0", "name": "A", "fullName": "Alpha", "decimals": 18 },
     { "addr": "0xffe8196bc259e8dedc544d935786aa4709ec3e64", "name": "HDG", "fullName": "Hedge", "decimals": 18 }
   ],
-  "defaultPair": { "token": "DAI", "base": "ETH" }
+  "defaultPair": { "token": "e₹", "base": "ETH" }
 }
