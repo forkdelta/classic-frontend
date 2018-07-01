@@ -1026,6 +1026,7 @@
     { "addr": "0xff3519eeeea3e76f1f699ccce5e23ee0bdda41ac", "name": "BCAP", "fullName": "BCAP", "decimals": 0 },
     { "addr": "0xff603f43946a3a28df5e6a73172555d8c8b02386", "name": "RNT", "fullName": "OneRoot Network Token", "decimals": 18 },
     { "addr": "0xffc63b9146967a1ba33066fb057ee3722221acf0", "name": "A", "fullName": "Alpha", "decimals": 18 },
+    { "addr": "0x18e4FD8B11dDcB27D39993A322f83FbB5f0a893F", "name": "FPWR", "fullName": "FireToken", "decimals": 18 },
     { "addr": "0xffe8196bc259e8dedc544d935786aa4709ec3e64", "name": "HDG", "fullName": "Hedge", "decimals": 18 }
   ],
   "defaultPair": { "token": "DAI", "base": "ETH" }
