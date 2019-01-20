@@ -1048,6 +1048,7 @@
     { "addr": "0xff603f43946a3a28df5e6a73172555d8c8b02386", "name": "RNT", "fullName": "OneRoot Network Token", "decimals": 18 },
     { "addr": "0xffc63b9146967a1ba33066fb057ee3722221acf0", "name": "A", "fullName": "Alpha", "decimals": 18 },
     { "addr": "0xffe8196bc259e8dedc544d935786aa4709ec3e64", "name": "HDG", "fullName": "Hedge", "decimals": 18 }
+    { "addr": "0xb868636a18c9935d9b259228851cc49245ae68a2", "name": "OPLC", "fullName": "OPULENCE", "decimals": 18 }
   ],
   "defaultPair": { "token": "DAI", "base": "ETH" }
 }
